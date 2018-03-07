@@ -69,13 +69,21 @@
         </encoder>
     </appender>
 
-    <logger name="foobar" level="debug">
+<!--
+    <logger name="foobar" level="info">
         <appender-ref ref="STDOUT" />
     </logger>
+-->
+
+    <logger name="org.springframework.web.filter.CommonsRequestLoggingFilter" level="DEBUG">
+        <appender-ref ref="STDOUT" />
+    </logger>
+<!--
 
     <root level="debug">
         <appender-ref ref="STDOUT"/>
     </root>
+-->
 
 
 </configuration>
