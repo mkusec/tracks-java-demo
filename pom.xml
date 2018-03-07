@@ -62,12 +62,13 @@
         </dependency>
 
         <!--
-         net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder
+         net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder-->
 
 		<dependency>
 			<groupId>net.logstash.logback</groupId>
 			<artifactId>logstash-logback-encoder</artifactId>
-		</dependency>-->
+			<version>5.0</version>
+		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
