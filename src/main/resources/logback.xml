@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration> <!--  scan="true" scanPeriod="30 seconds" -->
 
-    <!--configuration properties
+    <!--configuration properties-->
     <property resource="application.properties"/>
 
     <property name="application_name" value="${spring.application.name}" />
@@ -12,7 +12,6 @@
     <property name="LOG_PATH" value="logs"/>
 
     <property name="logging_file_path" value="${logging.file.path}" />
--->
 
 
     <!--custom loggers and levels -->
@@ -40,7 +39,7 @@
                 </timestamp>
                 <mdc/>
                 <logLevel>
-                    <fieldName>severity</fieldName>
+                    <fieldName>level</fieldName>
                 </logLevel>
                 <pattern>
                     <pattern>
@@ -63,7 +62,9 @@
                 <arguments>
                     <fieldName>identifiers</fieldName>
                 </arguments>
-                <message />
+                <message>
+                    <fieldName>msg</fieldName>
+                </message>
                 <stackTrace />
             </providers>
         </encoder>
