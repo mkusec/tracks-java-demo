@@ -44,11 +44,8 @@
                 <pattern>
                     <pattern>
                         {
-                        "source":
-                        {
-                        "name": "${application_name}",
-                        "domain": "${application_domain}"
-                        }
+                        "source.name": "${application_name}",
+                        "source.domain": "${application_domain}"
                         }
                     </pattern>
                 </pattern>
